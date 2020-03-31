@@ -24,12 +24,9 @@ def lecture_hall(time, day_of_the_week):
         
         if td.find_all('td')[day_of_the_week+1].get_text(strip=True) == '':
             free_room = 1
-        else:
-            free_room = 0
 
         hall.append({
             'title':item.get_text(),
-            'time':time,
             'free room': free_room
         })
 
