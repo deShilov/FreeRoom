@@ -50,8 +50,8 @@ def lecture_hall(time, day_of_the_week, corp):
         week_tag = td_1.find('div', class_='week')
         
         if len(td_1.find_all('div', class_='groups')) != 2:
-            if week_tag: # week.replace(' ', '')
-                if td_1.get_text(strip=True) == '' or td_1.find('div', class_='week').get_text(strip=True) != 'Нечетная':
+            if week_tag:
+                if td_1.get_text(strip=True) == '' or td_1.find('div', class_='week').get_text(strip=True) != week.replace(' ', ''):
                     free_room = 1
             else:
                 if td_1.get_text(strip=True) == '':
