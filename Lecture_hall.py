@@ -3,13 +3,12 @@ from bs4 import BeautifulSoup
 import pickle
 
 def lecture_hall(time, day_of_the_week, corp):
-    
     """
     lecture_hall(time, day_of_the_week, corp)
     
         time = {0 - 9:00, 1 - 10:50, 2 - 12:40, 3 - 14:30, 4 - 16:20, 5-18:10, 6-20:00}
         day_of_the_week = {0 - понедельник, 1 - вторник, 2 - среда, 3 - четрерг, 4 - пятница, 5 - суббота}
-        corp = {0 - новый корпус, 1 - старый корпус} 
+        corp = {0 - новый корпус, 1 - старый корпус}
     """
     
     pickle_in = open('new_corp.pickle', 'rb')
