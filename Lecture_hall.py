@@ -30,7 +30,6 @@ def lecture_hall(time, day_of_the_week, corp):
     week = soup.find_all('div', class_='parity')[0].get_text(strip=True).replace('неделя','')
     
     hall = []
-
     for item in items:
         
         if str(item.get_text()) not in corps[corp]:
